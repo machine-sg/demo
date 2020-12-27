@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Test Schedule</title>
+    <link rel="stylesheet" href="../user/result_update.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+     <link rel="stylesheet" href="../font-awesome/css/font-awesome.min.css">
+     <link ref="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-social/5.1.1/bootstrap-social.min.css.map">
+     
+</head>
+<body>
+    
+    <div class="container">
+        
+        <div class="row row-content">
+            
+            <div class="col-12 col-md-6">
+                <div class="text">Update result</div>
+                <br>
+                <form>
+                    
+                    <div class="form-group row">
+                        <label for="subject" class="col-md-2" class="col-form-label"><h6>Total questions</h6></label>
+                        <div class="col-md-10">
+                            <input type="number" name="total_question" id="total_question" placeholder="total_question" required/>
+                        </div>
+                    </div> 
+                    <div class="form-group row">
+                        <label for="subject" class="col-md-2" class="col-form-label"><h6>Attempted</h6></label>
+                        <div class="col-md-10">
+                            <input type="number" name="attempted" id="attempted" placeholder="attempted" required/>
+                        </div>
+                    </div> 
+                    <div class="form-group row">
+                        <label for="subject" class="col-md-2" class="col-form-label"><h6>Correct</h6></label>
+                        <div class="col-md-10">
+                            <input type="number" name="correct" id="correct" placeholder="correct" required/>
+                        </div>
+                    </div> 
+                    <div class="form-group row">
+                        <label for="subject" class="col-md-2" class="col-form-label"><h6>Wrong</h6></label>
+                        <div class="col-md-10">
+                            <input type="number" name="wrong" id="wrong" placeholder="wrong" required/>
+                        </div>
+                    </div> 
+                    &nbsp; &nbsp; <button class="btn btn-primary" id="save-btn"><a href="../front/result.html">Save</a></button>
+                    
+                </form>
+            </div>
+        </div>
+        <div class="main-body">
+            <div class="result-box custom-box hide">
+                <h1>Quiz Result</h1>
+                <table>
+                    <tr>
+                        <td>Total Questions</td>
+                        <td><span class="total-question"></span></td>
+
+                    </tr>
+                    <tr>
+                        <td>Attempt</td>
+                        <td><span class="total-attempt"></span></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Correct
+                        </td>
+                        <td><span class="total-correct"></span></td>
+                    </tr>
+                    <tr>
+                        <td>Wrong</td>
+                        <td><span class="total-wrong"></span></td>
+                    </tr>
+                    <tr>
+                        <td>Percentage</td>
+                        <td><span class="percentage"></span></td>
+                    </tr>
+                    <tr>
+                        <td>Your Total Score</td>
+                        <td><span class="total-score"></span></td>
+                    </tr>
+                </table>
+            </div>
+        </div>    
+    
+    </div>
+    <script src="result_update.js">
+    </script>
+   <script src="../front/result.js"></script>
+</body>
+</html>

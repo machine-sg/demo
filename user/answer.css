@@ -1,0 +1,70 @@
+
+body{
+    margin: 0;
+  
+}
+.navbar-dark {
+    background-color: rgb(150, 173, 179); 
+}
+.row-content{
+    margin: 0px auto;
+    padding-top: 30px;
+    text-align: center;
+}
+
+.text{
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center; 
+    text-shadow: 1px 1px 2px black;
+   
+}                    
+
+table{
+    table-layout: fixed;
+    height: 100%;
+    /*margin: 20px auto;*/
+    
+}
+
+table th{
+    align-items: center;
+    text-align: center;
+}
+table  td{
+    align-items: center;
+    padding-left: 5px;
+    padding-right: 5px;
+    text-align: center;
+    border-collapse: collapse;
+}
+
+.bdr{
+    display: flex;
+    border: solid 2px black;
+  /*  border-radius: 2rem;*/
+ /* background-color: rgb(150, 150, 243);
+ color: black; */
+    background-image: url(../image/answer_back.PNG);
+    color: black;
+ 
+}
+
+button a{
+    color: white;
+}
+
+button a:hover{
+    color: white;
+    text-decoration: none;
+}
+
+.btn.hide{
+    display: none;
+}
+
+
+
+
+
+

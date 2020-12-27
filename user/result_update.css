@@ -1,0 +1,125 @@
+@import url('https://font.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+
+body{
+    margin: 0;
+}
+.main-body{
+    padding-top: 50px;
+    
+}
+
+
+.text{
+    font-size: 30px;
+    font-weight: bold;
+    text-align: left; 
+    text-shadow: 1px 1px 2px black;
+   
+}                    
+
+.custom-box{
+    max-width: 700px;
+    background-color:#ffffff;
+    margin: 20px auto;
+    padding: 30px;
+    border-radius: 10px;
+    width: 100%; 
+    animation: fadeInRight 1s ease;
+}
+@keyframes fadeInRight{
+    0%{
+        transform: translateX(40px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+.custom-box::before,
+.custom-box::after{
+    content: '';
+    clear: both;
+    display: table;
+}
+
+.result-box{
+    text-align: center;
+    background-color: whitesmoke;
+}
+.result-box.hide{
+    display: none;
+}
+.result-box h1{
+    font-size: 36px;
+    line-height: 42px;
+    color: #505783;
+}
+.result-box table{
+    width: 100%;
+    border-collapse: collapse;
+    margin: 30px 0;
+}
+
+.result-box table td{
+    border: 1px solid #cccccc;
+    padding: 8px 15px;
+    font-weight: 500;
+    color: #000000;
+    width: 50%;
+    text-align: left;
+    font-size: 20px;
+}
+
+.result-box .btn{
+    margin-right: 20px;
+}
+
+@media(max-width : 767px){
+    .result-box .btn{
+        margin-bottom: 15px;
+    }
+    body{
+        padding: 15px;
+    }
+}
+
+.row-content {
+    margin: 0px auto;
+    padding: 50px 0px;
+    padding-top: 50px;
+    border-bottom: 1px ridge;
+}
+  
+table{
+    width: 95%;
+    table-layout: fixed;
+    margin: 20px auto;
+    
+}
+
+table th{
+   
+    text-align: center;
+}
+table  td{
+    
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: center;
+    border-collapse: collapse;
+}
+
+button a{
+    color: white;
+}
+
+button a:hover{
+    color: white;
+    text-decoration: none;
+}
+
+.btn.hide{
+    display: none;
+}
+
