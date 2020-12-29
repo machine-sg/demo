@@ -1,77 +1,9 @@
-/* body{
-    margin: 0;
-    width: 100%;
-}
-
-.row-content{
-    background-image: url("../image/admin_user5.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    height:624px;
-}
-a{
-    color: black;
-    font-size: 30px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-}
-
-.col{
-    margin: 0px auto;
-    padding: 450px 0 0 1000px;
-    width: 100%;
-}
-.btn{
-    display: inline;
-    width:45%;
-    background-color: rgb(223, 221, 106);
-    
-}
-
- */
-
-
-  /* body{
-	margin-top:50px;
-	color: #1a202c;
-	text-align: left;
-    background-color: #e2e8f0;   
-    background-image: url(../image/carousel5.jpg);
-   
-  }
-
- 
-  .main-body {
-    background-image: url(../image/carousel5.jpg);
-    padding-top: 240px;
-	
-  }
-  
-  .btn-block {
-	padding: 10px 10px;
-		background-color: green;
-		border-radius: 0;
-		font-size: 20px;
-		font-weight: bold;
-		color: #fff;
-		margin-bottom: 14px; 
-  }
-  button a{
-	color: white;
-  }
-  button a:hover{
-	color: white;
-	text-decoration: none;
-  }
-  
-  
-  
-    */
-
-
-    body {
+ body {
         font-family: "Karla", sans-serif;
-        background-color: white;
+        /* background-color: white; */
         min-height: 100vh; 
+        background: linear-gradient(to bottom, #33ccff 0%, #ff99cc 100%);
+        background-image: url(../image/front_back2.jpg);
     }
     
       .login-section-wrapper {
@@ -81,9 +13,10 @@ a{
         -webkit-box-direction: normal;
                 flex-direction: column;
         padding: 0 100px;
-        background-color: #fff; 
+        /* background-color: #fff;  */
         /* background-image: url(../image/front_back2.jpg);
         background-repeat: no-repeat; */
+        
     }
         @media (max-width: 991px) {
           .login-section-wrapper {
@@ -118,18 +51,22 @@ a{
         
         
         .login-wrapper .login-btn {
-          padding: 13px 20px;
-          background-color: #fdbb28;
-          border-radius: 0;
-          font-size: 20px;
+          padding: 10px 10px;
+          background-color: #7580c5;
+          box-shadow: 4px 4px 4px rgb(2, 2, 43);
+          font-size: 30px;
           font-weight: bold;
-          color: #fff;
+          color: rgb(207, 152, 32);
           margin-bottom: 14px; 
+          margin-top:40px;
+          border: 2px solid rgb(2, 2, 43);
+          border-end-start-radius: 20%;
+          text-shadow: 2px 2px 4px maroon;
         }
           .login-wrapper .login-btn:hover {
-            border: 1px solid #fdbb28;
+            border: 1px solid #314097;
             background-color: #fff;
-            color: #fdbb28; 
+            color: #314097; 
         }
         
         .login-wrapper-footer-text {
@@ -149,10 +86,24 @@ a{
         }
       
         button a{
-          color: white;
+          color: #fdbb28;
         } 
 
         button a:hover{
           color:  #fdbb28;
           text-decoration: none;
+        }
+
+        .rounded-circle{
+          border: 2px solid rgb(38, 45, 58);
+          border-radius: 5%;
+          width: 50%;
+          height: 40%;
+          padding-top: 50%;
+          margin-top: 10%;
+          margin-left: 20%;
+          background-image: url(../image/logo3.png);
+          background-repeat: no-repeat;
+          
+          box-shadow: 10px 10px 12px black;
         }
