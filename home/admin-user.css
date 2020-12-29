@@ -1,4 +1,74 @@
- body {
+/* body{
+    margin: 0;
+    width: 100%;
+}
+
+.row-content{
+    background-image: url("../image/admin_user5.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:624px;
+}
+a{
+    color: black;
+    font-size: 30px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.col{
+    margin: 0px auto;
+    padding: 450px 0 0 1000px;
+    width: 100%;
+}
+.btn{
+    display: inline;
+    width:45%;
+    background-color: rgb(223, 221, 106);
+    
+}
+
+ */
+
+
+  /* body{
+	margin-top:50px;
+	color: #1a202c;
+	text-align: left;
+    background-color: #e2e8f0;   
+    background-image: url(../image/carousel5.jpg);
+   
+  }
+
+ 
+  .main-body {
+    background-image: url(../image/carousel5.jpg);
+    padding-top: 240px;
+	
+  }
+  
+  .btn-block {
+	padding: 10px 10px;
+		background-color: green;
+		border-radius: 0;
+		font-size: 20px;
+		font-weight: bold;
+		color: #fff;
+		margin-bottom: 14px; 
+  }
+  button a{
+	color: white;
+  }
+  button a:hover{
+	color: white;
+	text-decoration: none;
+  }
+  
+  
+  
+    */
+
+
+    body {
         font-family: "Karla", sans-serif;
         /* background-color: white; */
         min-height: 100vh; 
