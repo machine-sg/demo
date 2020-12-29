@@ -1,7 +1,7 @@
 const startBtn = document.getElementById('start');
 //const overBtn = document.getElementById('over');
 const resultBtn = document.getElementById('result');
-var startDate = new Date("Dec 28, 2020 02:05:00").getTime(); ;
+var startDate = new Date("Dec 11, 2021 02:05:00").getTime(); ;
 var startTime = document.getElementById('starttime');
 var endTime = document.getElementById('endtime'); 
 
