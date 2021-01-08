@@ -20,6 +20,19 @@ body{
    
 }                    
 
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 0 solid rgba(0,0,0,.125);
+    border-radius: .25rem;
+}
+
+
 table{
     table-layout: fixed;
     height: 100%;
@@ -42,7 +55,7 @@ table  td{
 .bdr{
     display: flex;
     border: solid 2px black;
-    border-radius: 2rem;
+    border-radius: 0.5rem;
 }
 
 button a{
