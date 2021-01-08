@@ -30,42 +30,38 @@
     </style>
     </head>
     <body>
-        <nav class="navbar navbar-dark navbar-expand-sm fixed-top">
-            <div class="container">
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <nav class="navbar navbar-dark navbar-expand-sm fixed-top">
-                    <div class="container">
-                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                        <div class="collapse navbar-collapse" id="Navbar">
-                            <ul class="navbar-nav mr-auto">
-                                    <li class="nav-item"><a class="nav-link" href="../user/profile_user.html"><span class="fa fa-home fa-lg"></span> Home</a></li>
-                            </ul>
-                        </div>
+        <div class="container">
+            <nav class="navbar navbar-dark navbar-expand-sm fixed-top">
+                <div class="container">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="Navbar">
+                        <ul class="navbar-nav mr-auto">
+                                <li class="nav-item"><a class="nav-link" href="../user/profile_user.html"><span class="fa fa-user fa-lg"> Profile</span></a></li>
+                                
+                        </ul>
                         <span class="navbar-text">
                             <a href="../home/admin-user.html">
                                 <span class="fa fa-sign-in"></span> Logout
                             </a>
                         </span>
                     </div>
-                </nav>
-            </div>
-        </nav>
-        <div class="container">
+                </div>
+            </nav>
             <div class="row row-content">
                 <div class="home-box custom-box">
                     <h1>Instructions: </h1>
-                    <h3>Total number of questinos:<span class="total-question"></span></h3>
-                    <button type="button" class="btn" onclick="startQuiz()">Start Quiz</button>    
+                    <h3>1. Total number of questinos:<span class="total-question"></span></h3>
+                    <h3>2. In the second section, each question will contain four options. You have to choose the right option with proper explanation behind your choice</h3>
+                    
+                    <button type="button" class="btn btn-lg" onclick="startQuiz()">Start Quiz</button>    
                 </div>
             
                 <div class="quiz-box custom-box hide">
                     <div id="demo">8:10:45</div> 
                         <script> 
-                            var deadline = new Date("Jan 11, 2020 14:05:00").getTime(); 
+                            var deadline = new Date("Dec 26, 2020 22:37:25").getTime(); 
                             var x = setInterval(function() { 
                                 var now = new Date().getTime(); 
                                 var t = deadline - now; 
@@ -95,11 +91,11 @@
                     <div class="next-question-button">
                         <div class="col-12">
                         
-                        <button class="btn hide" id="prev">Previous</button>
+                        <button class="btn btn-lg hide" id="prev">Previous</button>
                         
-                        <button class="btn hide" id="next">Next</button>
-                        <button class="btn" id="save">Save</button>
-                        <button class="btn hide" id="submit"><a href="../user/thankyou.html">Submit</a></button>
+                        <button class="btn btn-lg hide" id="next">Next</button>
+                        <button class="btn btn-lg" id="save">Save</button>
+                        <button class="btn btn-lg hide" id="submit"><a href="../user/thankyou.html">Submit</a></button>
                         
                         </div>
                     </div>
