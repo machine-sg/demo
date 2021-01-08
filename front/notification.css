@@ -1,7 +1,8 @@
 
 body{
     margin: 0;
-  
+    text-rendering: optimizeLegibility;
+    z-index: 1;
 }
 .navbar-dark {
     background-color: rgb(19, 27, 77); 
@@ -10,6 +11,7 @@ body{
     margin: 0px auto;
     padding-top: 70px;
     text-align: center;
+    vertical-align: baseline;
 }
  
 .text{
@@ -19,6 +21,19 @@ body{
     text-shadow: 1px 1px 2px black;
     align-items: center;
 }
+
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 0 solid rgba(0,0,0,.125);
+    border-radius: .25rem;
+}
+
 
 .footer {
     background-color: rgb(29, 26, 26);
@@ -33,7 +48,8 @@ table{
     table-layout: fixed;
     height: 100%;
     /*margin: 20px auto;*/
-    
+    border-collapse: collapse;
+    border-spacing: 0;
 }
 
 table th{
@@ -47,11 +63,13 @@ table  td{
     text-align: center;
     border-collapse: collapse;
 }
-
+td button {
+    align-items: center;
+}
 .bdr{
     display: flex;
     border: solid 2px black;
-    border-radius: 2rem;
+    border-radius: 1rem;
 }
 
 button a{
@@ -76,6 +94,12 @@ button a:hover{
     left: 0;
     min-height: 300px;
 }
+
+.btn-block{
+    position: relative;
+    flex-direction: column;
+}
+
 
 
 

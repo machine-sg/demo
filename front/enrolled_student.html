@@ -11,29 +11,30 @@
      
 </head>
 <body>
-    <nav class="navbar navbar-dark navbar-expand-sm fixed-top">
-        <div class="container">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="Navbar">
-                <ul class="navbar-nav mr-auto">
-                        <li class="nav-item"><a class="nav-link" href="../user/profile_user.html"><span class="fa fa-user fa-lg"></span> Profile</a></li>
-                        <li class="nav-item"><a class="nav-link" href="../front/notification.html"><span class="fa fa-bell fa-lg"></span> Notification</a></li>
-                        <li class="nav-item active"><a class="nav-link" href="#"><span class='fa fa-child fa-lg'></span> Students</a></li>
-                </ul>
-                <span class="navbar-text">
-                    <a href="../home/admin-user.html">
-                        <span class="fa fa-sign-in"></span> Logout
-                    </a>
-                </span>
-            </div>
-        </div>
-    </nav>
     <div class="container">
+        <nav class="navbar navbar-dark navbar-expand-sm fixed-top">
+            <div class="container">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="Navbar">
+                    <ul class="navbar-nav mr-auto">
+                            <li class="nav-item"><a class="nav-link" href="../user/profile_user.html"><span class="fa fa-user fa-lg"></span> Profile</a></li>
+                            <li class="nav-item"><a class="nav-link" href="../front/notification.html"><span class="fa fa-bell fa-lg"></span> Notification</a></li>
+                            <li class="nav-item active"><a class="nav-link" href="#"><span class='fa fa-child fa-lg'></span> Students</a></li>
+                    </ul>
+                    <span class="navbar-text">
+                        <a href="../home/admin-user.html">
+                            <span class="fa fa-sign-in"></span> Logout
+                        </a>
+                    </span>
+                </div>
+            </div>
+        </nav>
             <div class="row row-content">
                 <div class="col-12">
                     <div class="text">Exams Enrolled</div><br>
+                    <div class="card">
                     <div class="bdr">
                     <section>
                         <table class="table table-striped">
@@ -57,8 +58,8 @@
                                     <td id="starttime">13:30</td>
                                     <td id="endtime">14:30</td>
                                     <td>
-                                        <button class="btn btn-danger hide" id="start"><a href="../OS/os.html">Start</a></button>
-                                        <button class="btn btn-success hide" id="result"><a href="../front/result.html">Result</a></button>
+                                        <button type="button" class="btn btn-danger btn-block hide" id="start"><a href="../OS/os.html">Start</a></button>
+                                        <button type="button" class="btn btn-success btn-block hide" id="result"><a href="../front/result.html">Result</a></button>
                                     </td>
                                     
                                 </tr>
@@ -69,7 +70,7 @@
                         </table>  
                     
                     </section> 
-                    
+                    </div>
                     </div> 
                 </div>
             </div>
