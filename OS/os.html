@@ -17,17 +17,6 @@
      <link ref="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-social/5.1.1/bootstrap-social.min.css.map">
      
     <!-- endbuild -->
-    <style>
-        #demo { 
-            font-size: 40px; 
-            width: 350px; 
-            margin-left: 20%;
-            margin-bottom: 1%;
-            text-align: center; 
-            border: 2px solid black; 
-            border-radius: 20px; 
-        } 
-    </style>
     </head>
     <body>
         <div class="container">
@@ -76,7 +65,25 @@
                                         document.getElementById("demo").innerHTML = "EXPIRED"; 
                                     } 
                             }, 1000); 
-                        </script>     
+                        </script>   
+                    <div id="square">
+                        <video autoplay="true" id="videoElement">
+                        
+                        </video>
+                    </div>
+                    <script>
+                        var video = document.querySelector("#videoElement");
+
+                        if (navigator.mediaDevices.getUserMedia) {
+                        navigator.mediaDevices.getUserMedia({ video: true })
+                            .then(function (stream) {
+                            video.srcObject = stream;
+                            })
+                            .catch(function (err0r) {
+                            console.log("Something went wrong!");
+                            });
+                        }
+                    </script>  
                     <div class="question-number">
                         
                     </div>
