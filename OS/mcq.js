@@ -6,12 +6,13 @@ const answerIndicatorContainer = document.querySelector(".answers-indicator");
 const homeBox = document.querySelector(".home-box");
 const quizBox = document.querySelector(".quiz-box");
 const resultBox = document.querySelector(".result-box");
+const line = document.querySelector('.txt');
 const prevBtn = document.getElementById('prev');
 const nextBtn = document.getElementById('next');
 const submitBtn = document.getElementById('submit');
 const successBtn = document.getElementById('success');
 const failedBtn = document.getElementById('failed');
-const line = document.querySelector(".txt");
+
 
 let questionCounter = 0;
 let currentQuestion;
@@ -34,6 +35,7 @@ function setAvailableQuestion(){
 nextBtn.classList.remove('hide');
 nextBtn.addEventListener('click', next);
 submitBtn.addEventListener('click', submit);
+
 
 if(questionCounter < 1){
     prevBtn.classList.add('hide');
@@ -259,7 +261,9 @@ function quizResult(){
     resultBox.querySelector(".percentage").innerHTML= percentage.toFixed(2) + "%";
     resultBox.querySelector(".total-score").innerHTML= correctAnswer + " / " + quiz.length;
     if(percentage >= 40.00){
+        line.classList.add('hide');
         successBtn.classList.remove('hide');
+        
     }
     else{
         line.classList.remove('hide');

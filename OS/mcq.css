@@ -341,6 +341,10 @@ body{
     border-bottom: 1px ridge;
     
 }
+
+.txt.hide{
+    display: none;
+}
   
 
 
