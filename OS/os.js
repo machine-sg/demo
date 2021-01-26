@@ -148,7 +148,10 @@ function getPrevQuestion(){
     }
     
     //questionCounter++;
-    
+    if(questionCounter === totalQuestion-1){
+        nextBtn.classList.remove('hide');
+        submitBtn.classList.add('hide');
+    }
 
 }
 
