@@ -10,6 +10,8 @@ const prevBtn = document.getElementById('prev');
 const nextBtn = document.getElementById('next');
 const submitBtn = document.getElementById('submit');
 const successBtn = document.getElementById('success');
+const failedBtn = document.getElementById('failed');
+const line = document.querySelector(".txt");
 
 let questionCounter = 0;
 let currentQuestion;
@@ -258,6 +260,10 @@ function quizResult(){
     resultBox.querySelector(".total-score").innerHTML= correctAnswer + " / " + quiz.length;
     if(percentage >= 40.00){
         successBtn.classList.remove('hide');
+    }
+    else{
+        line.classList.remove('hide');
+        failedBtn.classList.remove('hide');
     }
 }
 
