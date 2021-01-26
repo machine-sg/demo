@@ -346,5 +346,9 @@ body{
     display: none;
 }
   
+.text.hide{
+    display: none;
+}
+  
 
 
