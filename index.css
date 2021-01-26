@@ -3,7 +3,7 @@
         /* background-color: white; */
         min-height: 100vh; 
         background: linear-gradient(to bottom, #33ccff 0%, #ff99cc 100%);
-        background-image: url(../image/front_back2.jpg);
+        background-image: url(image/front_back2.jpg);
     }
     
       .login-section-wrapper {
