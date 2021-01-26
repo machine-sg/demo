@@ -13,7 +13,3 @@ $("#imageUpload").change(function(){
     fasterPreview( this );
 });
 
-$(".remove").click(function(){
-    $(this).parent(".pip").remove();
-    $('#files').val("");
-});
